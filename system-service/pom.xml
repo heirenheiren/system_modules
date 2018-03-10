@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.maven</groupId>
+    <artifactId>system_modules</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>system-service</artifactId>
+  <packaging>jar</packaging>
+  <name>system-service</name>
+  <url>http://maven.apache.org</url>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <dependencies>
+  	 <!--
+     system-service依赖system-dao和system-domain，
+ 	    但是我们只需添加system-dao的依赖即可，因为system-dao已经依赖了system-domain
+     -->
+    <dependency>
+      <groupId>com.maven</groupId>
+      <artifactId>system-dao</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+  </dependencies>
+</project>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.maven</groupId>
+    <artifactId>system_modules</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>system-web</artifactId>
+  <packaging>war</packaging>
+  <name>system-web Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+  <!--system-web依赖system-service-->
+    <dependency>
+      <groupId>com.maven</groupId>
+      <artifactId>system-service</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+		<groupId>javax.servlet</groupId>
+		<artifactId>javax.servlet-api</artifactId>
+		<version>3.0.1</version>
+		<scope>provided</scope>
+	</dependency>
+  </dependencies>
+  <build>
+    <finalName>system-web</finalName>
+    <plugins>
+    	<plugin>
+    		<groupId>org.mortbay.jetty</groupId>
+    		<artifactId>maven-jetty-plugin</artifactId>
+    		<version>6.1.26</version><!-- 首次maven build运行jetty:run可不写版本号，自动适配下载最新版本jetty -->
+    	</plugin>
+    </plugins>
+  </build>
+</project>
