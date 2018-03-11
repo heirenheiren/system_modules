@@ -1,4 +1,4 @@
-package org.system.dao.persistence;
+package org.system.dao.hibernate.persistence;
 
 import java.io.Serializable;
 import java.util.Set;

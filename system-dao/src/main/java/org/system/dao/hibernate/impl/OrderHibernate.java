@@ -1,4 +1,4 @@
-package org.system.dao.impl;
+package org.system.dao.hibernate.impl;
 
 import java.util.Collection;
 import java.util.List;
@@ -7,7 +7,7 @@ import java.util.Map;
 import org.hibernate.Criteria;
 import org.hibernate.Query;
 import org.hibernate.SQLQuery;
-import org.system.dao.persistence.Order;
+import org.system.dao.hibernate.persistence.Order;
 import org.system.domain.exception.OperationException;
 import org.system.domain.hibernate.HibernateGenericDao;
 /**

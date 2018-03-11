@@ -1,6 +1,6 @@
-package org.system.dao.impl;
+package org.system.dao.hibernate.impl;
 
-import org.system.dao.persistence.Order;
+import org.system.dao.hibernate.persistence.Order;
 import org.system.domain.hibernate.HibernateEntityDao;
 
 public interface OrderDao extends HibernateEntityDao<Order, Integer> {
