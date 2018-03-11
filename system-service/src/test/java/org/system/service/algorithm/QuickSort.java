@@ -5,7 +5,7 @@ package org.system.service.algorithm;
  * @author Administrator
  *
  */
-public class Snippet
+public class QuickSort
 {
 	public static void main(String[] args)
 	{
