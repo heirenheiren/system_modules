@@ -1,11 +1,11 @@
-package com.test;
+package com.collection;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
-public class Arraylist {
+public class ArrayListTest {
 
 	
 	

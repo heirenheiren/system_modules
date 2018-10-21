@@ -1,4 +1,4 @@
-package com.test;
+package com.collection;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -7,7 +7,7 @@ import java.util.Set;
  * @author Administrator
  *
  */
-public class Hashset {
+public class HashSetTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

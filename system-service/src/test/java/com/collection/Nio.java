@@ -1,4 +1,4 @@
-package com.test;
+package com.collection;
 
 import java.io.IOException;
 import java.net.InetAddress;

@@ -1,9 +1,9 @@
-package com.test;
+package com.collection;
 
 import java.util.Enumeration;
 import java.util.Hashtable;
 
-public class HashTable {
+public class HashTableTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

@@ -1,4 +1,4 @@
-package com.test;
+package com.object;
 
 public class Customer {
 	private String name;
