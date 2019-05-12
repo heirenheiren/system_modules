@@ -5,8 +5,6 @@ import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.context.support.FileSystemXmlApplicationContext;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.io.Resource;
@@ -19,9 +17,9 @@ public class BeanFactoryTest
 	static
 	{
 		//该容器从 XML 文件中加载已被定义的 bean。在这里，你不需要提供 XML 文件的完整路径，只需正确配置 CLASSPATH 环境变量即可，因为，容器会从 CLASSPATH 中搜索 bean 配置文件。
-		context = new ClassPathXmlApplicationContext(new String[] {"applicationContext.xml", "applicationContext-part2.xml"});
-		//该容器从 XML 文件中加载已被定义的 bean。在这里，你需要提供给构造器 XML 文件的完整路径
-		context = new FileSystemXmlApplicationContext("C:/applicationContext.xml");
+		//context = new ClassPathXmlApplicationContext(new String[] {"applicationContext.xml", "applicationContext-part2.xml"});
+		//该容器从 X--ML 文件中加载已被定义的 bean。在这里，你需要提供给构造器 XML 文件的完整路径
+		//context = new FileSystemXmlApplicationContext("C:/applicationContext.xml");
 		//该容器会在一个 web 应用程序的范围内加载在 XML 文件中已被定义的 bean。
 		context = new XmlWebApplicationContext();
 	}
